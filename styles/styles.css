@@ -138,3 +138,20 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
+
+/*ПОДВАЛ*/
+
+.phone-footer {
+  font-style: normal;
+}
+
+.footer-phone-link {
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #000000;
+}
+
+/* ТОП СЕКЦИЯ*/
+
+
