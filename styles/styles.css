@@ -73,7 +73,7 @@ body {
   background-color: #82B3D3;
   background-image: url("../images/hero-background.jpg");
   background-size: 100% auto;
-  background-repeat: no-repeat;/*изображеие по высоте не помещается полностью, что делать?*/
+  background-repeat: no-repeat;/*изображение по высоте не помещается полностью, образаются белые горы. что делать?*/
 
 }
 
@@ -115,7 +115,7 @@ body {
 
 }
 
-.services-item:nth-child(n) {
+.services-item {
   background-color: rgba(131, 179, 211, 0.12);
 
 }
@@ -132,12 +132,34 @@ body {
 }
 
 /* ПОДПИСКА*/
+
+.subscribe-title {
+  color: #FFFFFF;
+}
+
 .subscribe {
+  color: #FFFFFF;
+  font-size: 22px;
+  line-height: 26px;
   background-color: #82B3D3;
   background-image: url("../images/subscribe.jpg");/*изображеие по высоте не помещается полностью, что делать?*/
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
+
+
+/* ПОДПИСКА КАТАЛОГА*/
+.subscribe-inner {
+  background-color: #FFFFFF;
+  color: #333333;
+  background-image: none;
+}
+
+.subscribe-title-inner {
+  color: #000000;
+}
+
+
 
 /*ПОДВАЛ*/
 
@@ -152,6 +174,80 @@ body {
   color: #000000;
 }
 
-/* ТОП СЕКЦИЯ*/
+/* ТОП КОНТЕЙНЕР*/
 
+.top-conteiner {
 
+  color: #FFFFFF;
+
+  background-color: #82B3D3;
+  background-image: url("../images/filtr.jpg");
+  background-size: cover;
+
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.filter-catalog-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.control {
+line-height: 23px;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* КАТАЛОГ ГОСТИНИЦ*/
+
+.hotel-card-title-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-decoration: none;
+
+}
+
+.rating-hotel {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Пагинация*/
+
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #82B3D3;
+}
+
+.pagination-current  {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.pagination-extention {
+
+  font-size: 22px;
+  line-height: 26px;
+}
