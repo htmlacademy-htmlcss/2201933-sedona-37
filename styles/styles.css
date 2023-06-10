@@ -77,15 +77,64 @@ body {
 
 }
 
-/**/
+/* ПРЕИМУЩЕСТВА*/
 .advantages-description {
   font-size: 22px;
   line-height: 26px;
 
 }
 
+/* H2 advantages*/
+.advantages-subtitle {
+  font-size: 24px;
+  line-height: 28px;
 
+}
 
-.advantages-inner {
+.advantages-container {
+  color: #FFFFFF;
 
+}
+
+.advantages-item {
+  background-color: #82B3D3;
+}
+
+.advantages-item:nth-child(2n) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(3) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+/* СЕРВИС*/
+.services-description {
+  font-size: 22px;
+  line-height: 26px;
+
+}
+
+.services-item:nth-child(n) {
+  background-color: rgba(131, 179, 211, 0.12);
+
+}
+
+.services-item:nth-child(2) {
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ПОИСК*/
+.search-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/* ПОДПИСКА*/
+.subscribe {
+  background-color: #82B3D3;
+  background-image: url("../images/subscribe.jpg");/*изображеие по высоте не помещается полностью, что делать?*/
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
