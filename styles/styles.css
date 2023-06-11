@@ -1,0 +1,293 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #FFFFFF;
+  text-align: center;
+
+}
+
+/* Кнопки*/
+.button {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #756157;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-container {
+  background-color: #F2F2F2; /* цвет в контейнере преобладает над цветом в main. Может делать background для каждого блока отдельно-для шапки, майн и подвала ???*/
+  padding: 0px 40px;
+  margin: 0px;
+}
+
+.box-shadow-container {
+  background-color: FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);/*как убрать тень сверху и снизу, кажется ее там нет*/
+  padding: 0px;
+  margin: 0px;
+}
+
+/* Titles*/
+.title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+/*Header*/
+.navigation-link {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+
+}
+
+.user-menu-link {
+  font-family: inherit;
+  font-weight: 700;
+  text-decoration: none;
+
+}
+
+/* Hero*/
+.hero {
+
+  background-color: #82B3D3;
+  background-image: url("../images/hero-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;/*изображение по высоте не помещается полностью, образаются белые горы. что делать?*/
+
+}
+
+/* ПРЕИМУЩЕСТВА*/
+.advantages-description {
+  font-size: 22px;
+  line-height: 26px;
+
+}
+
+/* H2 advantages*/
+.advantages-subtitle {
+  font-size: 24px;
+  line-height: 28px;
+
+}
+
+.advantages-container {
+  color: #FFFFFF;
+
+}
+
+.advantages-item {
+  background-color: #82B3D3;
+}
+
+.advantages-item:nth-child(2n) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(3) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+/* СЕРВИС*/
+.services-description {
+  font-size: 22px;
+  line-height: 26px;
+
+}
+
+.services-item {
+  background-color: rgba(131, 179, 211, 0.12);
+
+}
+
+.services-item:nth-child(2) {
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ПОИСК*/
+.search-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.search-link-button {
+  font-size: 20px;
+  line-height: 36px
+}
+
+/* ПОДПИСКА*/
+
+.subscribe-title {
+  color: #FFFFFF;
+}
+
+.subscribe {
+  color: #FFFFFF;
+  font-size: 22px;
+  line-height: 26px;
+  background-color: #82B3D3;
+  background-image: url("../images/subscribe.jpg");/*изображеие по высоте не помещается полностью, что делать?*/
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.subscribe-button {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82B3D3;
+}
+
+
+/* ПОДПИСКА КАТАЛОГА*/
+.subscribe-inner {
+  background-color: #FFFFFF;
+  color: #333333;
+  background-image: none;
+}
+
+.subscribe-title-inner {
+  color: #000000;
+}
+
+
+
+/*ПОДВАЛ*/
+
+.phone-footer {
+  font-style: normal;
+}
+
+.footer-phone-link {
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #000000;
+}
+
+/* ТОП КОНТЕЙНЕР*/
+
+.top-conteiner {
+
+  color: #FFFFFF;
+
+  background-color: #82B3D3;
+  background-image: url("../images/filtr.jpg");
+  background-size: cover;
+
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+/* ФИЛЬТРЫ*/
+.filter-catalog-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.control {
+line-height: 23px;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.filter-button {
+  background-color: #82B3D3;
+}
+
+.filter-button-reset {
+  background-color: rgba(0, 0, 0, 0);;
+}
+
+
+/* КАТАЛОГ ГОСТИНИЦ*/
+
+.hotel-card-title-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-decoration: none;
+
+}
+
+.rating-hotel {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.add-favorites-button {
+  background-color: #82B3D3;
+}
+
+.in-favorites-button {
+  background-color: #7DB54F;;
+}
+
+/* Пагинация*/
+
+.pagination-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #82B3D3;
+}
+
+.pagination-current  {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
+.pagination-extention {
+
+  font-size: 22px;
+  line-height: 26px;
+}

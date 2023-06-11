@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+
     <header class="main-header">
       <!-- ЛОГОТИП-->
       <a class="logo" href="index.html">
@@ -20,7 +22,7 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="about.html">
-              О седоне
+              О Cедоне
             </a>
           </li>
           <li class="navigation-item">
@@ -145,10 +147,8 @@
       </div>
       <!-- КАТАЛОГ ГОСТИНИЦ-->
       <section class="hotel-catalog">
-        <h2 class="visually-hidden">
-          Каталог гостиниц
-        </h2>
-        <p class="hotel-catalog-title">Найдено гостиниц: 38</p>
+
+        <h2 class="hotel-catalog-title title">Найдено гостиниц: <span>38</span></h2>
 
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
@@ -168,8 +168,10 @@
         <!-- КАРТОЧКИ ОТЕЛЕЙ-->
         <ul class="hotel-list">
           <li class="hotel-card">
-            <a class="hotel-card-link" href="#">
+            <a class="hotel-card-image-link" href="#">
               <img class="hotel-card-image" src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Вид из гостиницы Amara Resort & Spa">
+            </a>
+            <a class="hotel-card-title-link" href="#">
               <h3>
                 Amara Resort & Spa
               </h3>
@@ -188,8 +190,10 @@
             </div>
           </li>
           <li class="hotel-card">
-            <a class="hotel-card-link" href="#">
+            <a class="hotel-card-image-link" href="#">
               <img class="hotel-card-image" src="images/catalog/hotel-2.jpg" width="300" height="212" alt="Вид из гостиницы Villas at Poco Diablo">
+            </a>
+            <a class="hotel-card-title-link" href="#">
               <h3>
                 Villas at Poco Diablo
               </h3>
@@ -208,8 +212,10 @@
             </div>
           </li>
           <li class="hotel-card">
-            <a class="hotel-card-link" href="#">
+            <a class="hotel-card-image-link" href="#">
               <img class="hotel-card-image" src="images/catalog/hotel-3.jpg" width="300" height="212" alt="Вид из гостиницы Desert Quail Inn">
+            </a>
+            <a class="hotel-card-title-link" href="#">
               <h3>
                 Desert Quail Inn
               </h3>
@@ -227,8 +233,10 @@
             </div>
           </li>
           <li class="hotel-card">
-            <a class="hotel-card-link" href="#">
+            <a class="hotel-card-image-link" href="#">
               <img class="hotel-card-image" src="images/catalog/hotel-4.jpg" width="300" height="212" alt="Вид из гостиницы GreenTree Inn">
+            </a>
+            <a class="hotel-card-title-link" href="#">
               <h3>
                 GreenTree Inn
               </h3>
@@ -260,7 +268,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link pagination-further" href="#">...</a>
+            <span class="pagination-extention">...</span>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
@@ -271,7 +279,7 @@
 
       <!-- ПОДПИСКА-->
       <section class="subscribe subscribe-inner">
-        <h2 class="subscribe-title  subscribe-title-inner">
+        <h2 class="subscribe-title title subscribe-title-inner">
           Подпишитесь на рассылку
         </h2>
         <p class="subscribe-description subscribe-description-inner">Только полезная информация и никакого спама, честное бойскаутское!</p>
