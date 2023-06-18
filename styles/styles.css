@@ -14,20 +14,41 @@
   font-display: swap;
 }
 
-body {
+* {
+  box-sizing: border-box;
+}
 
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background-color: #FFFFFF;
+  background-color: #F2F2F2;
   text-align: center;
+  margin: 0 auto;
+}
 
+.page-container {
+  min-height: 100%;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  background-color: #FFFFFF;
+
+  margin: 0 auto;
 }
 
 /* Кнопки*/
 .button {
   font-family: inherit;
+  box-sizing: border-box;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -38,18 +59,7 @@ body {
   text-transform: uppercase;
 }
 
-.main-container {
-  background-color: #F2F2F2; /* цвет в контейнере преобладает над цветом в main. Может делать background для каждого блока отдельно-для шапки, майн и подвала ???*/
-  padding: 0px 40px;
-  margin: 0px;
-}
 
-.box-shadow-container {
-  background-color: FFFFFF;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);/*как убрать тень сверху и снизу, кажется ее там нет*/
-  padding: 0px;
-  margin: 0px;
-}
 
 /* Titles*/
 .title {
@@ -78,14 +88,18 @@ body {
 
 }
 
+.main-container {
+  flex-grow: 1;
+}
+
 /* Hero*/
 .hero {
 
   background-color: #82B3D3;
   background-image: url("../images/hero-background.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;/*изображение по высоте не помещается полностью, образаются белые горы. что делать?*/
-
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 485px;
 }
 
 /* ПРЕИМУЩЕСТВА*/
