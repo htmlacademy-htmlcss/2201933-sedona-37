@@ -32,25 +32,25 @@
               </a>
             </li>
           </ul>
-        </nav>
-        <!-- МЕНЮ-->
-        <ul class="user-menu-list">
-          <li class="user-menu-item">
-            <a class="user-menu-link" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="user-menu-item">
-            <a class="user-menu-link" href="#">
-              <span class="visually-hidden">Избранное</span>
-              <span class="favorites">12</span>
-            </a>
-          </li>
-          <li class="user-menu-item">
-            <a class="user-menu-link button" href="#">Хочу сюда!</a>
-          </li>
-        </ul>
 
+          <!-- МЕНЮ-->
+          <ul class="user-menu-list">
+            <li class="user-menu-item">
+              <a class="user-menu-link" href="#">
+                <span class="visually-hidden">Поиск</span>
+              </a>
+            </li>
+            <li class="user-menu-item">
+              <a class="user-menu-link" href="#">
+                <span class="visually-hidden">Избранное</span>
+                <span class="favorites">12</span>
+              </a>
+            </li>
+            <li class="user-menu-item">
+              <a class="user-menu-link button" href="#">Хочу сюда!</a>
+            </li>
+          </ul>
+        </nav>
       </header>
 
       <!-- ОСНОВНОЕ ОДЕРЖАНИЕ КАТАЛОГА-->
@@ -63,7 +63,7 @@
             <ol class="breadcrumbs-list">
               <li class="breadcrumbs-item">
                 <a class="breadcrumbs-link" href="index.html">
-                  <p class="visually-hidden">Главная страница</p>
+                  <p class="visually-hidden" hidden>Главная страница</p>
                 </a>
               </li>
               <li class="breadcrumbs-item">
@@ -76,7 +76,7 @@
           </section>
           <!-- ФИЛЬТРЫ-->
           <section class="filter">
-            <h2 class="visually-hidden">
+            <h2 class="visually-hidden" hidden>
               Фильтры выбора гостиниц
             </h2>
             <form class="filter-catalog" action="https://echo.htmlacademy.ru/" method="get">
@@ -131,11 +131,12 @@
                 </ul>
               </fieldset>
 
-              <label class="price">Стоимость, ₽:
-              </label>
-              <input class="price-field" type="number" name="price-from" value="0" placeholder="от">
-              <input class="price-field" type="number" name="price-up" value="9000" placeholder="до">
-
+              <fieldset class="filter-catalog-group filter-cost">
+                <label class="price">Стоимость, ₽:
+                </label>
+                <input class="price-field" type="number" name="price-from" value="0" placeholder="от">
+                <input class="price-field" type="number" name="price-up" value="9000" placeholder="до">
+              </fieldset>
               <!-- Бегунок с ценой позже-->
 
               <div class="filter-button-inner">
@@ -148,24 +149,26 @@
         </div>
         <!-- КАТАЛОГ ГОСТИНИЦ-->
         <section class="hotel-catalog">
+          <div class="select-conteiner">
+            <h2 class="hotel-catalog-title title">Найдено гостиниц: <span>38</span></h2>
 
-          <h2 class="hotel-catalog-title title">Найдено гостиниц: <span>38</span></h2>
+            <select class="select-control" aria-label="Сортировка">
+              <option value="cheap">Сначала дешевые</option>
+              <option value="popular">Сначала популярные</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
 
-          <select class="select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешевые</option>
-            <option value="popular">Сначала популярные</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
+            <a class="button-view" href="#">
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+            <a class="button-view" href="#">
+              <span class="visually-hidden">Показать слайд</span>
+            </a>
+            <a class="button-view" href="#">
+              <span class="visually-hidden">Показать список</span>
+            </a>
 
-          <a class="button" href="#">
-            <span class="visually-hidden">Показать карточки</span>
-          </a>
-          <a class="button" href="#">
-            <span class="visually-hidden">Показать слайд</span>
-          </a>
-          <a href="#" class="button">
-            <span class="visually-hidden">Показать список</span>
-          </a>
+          </div>
           <!-- КАРТОЧКИ ОТЕЛЕЙ-->
           <ul class="hotel-list">
             <li class="hotel-card">

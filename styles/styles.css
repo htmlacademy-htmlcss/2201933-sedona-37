@@ -322,13 +322,26 @@ body {
   background-color: #82B3D3;
   background-image: url("../images/filtr.jpg");
   background-size: cover;
+  padding: 0 70px;
 
+}
+
+.inner-header {
+  text-align: left;
+}
+
+.breadcrumbs-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+
 }
 
 .breadcrumbs-link {
@@ -338,10 +351,32 @@ body {
 }
 
 /* ФИЛЬТРЫ*/
+
+.filter-catalog {
+  display: flex;
+  text-align: left;
+}
+
+.filter-catalog-group {
+  margin-right: 70px;
+  border: none;
+}
+
+.filter-cost {
+  text-align: right;
+}
+
+
 .filter-catalog-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+}
+
+.filter-catalog-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .control {
@@ -364,6 +399,54 @@ line-height: 23px;
 
 
 /* КАТАЛОГ ГОСТИНИЦ*/
+
+.hotel-catalog {
+  padding: 0 70px;
+}
+
+.select-conteiner {
+  display: flex;
+}
+
+.hotel-catalog-title {
+  text-align: left;
+  margin-right: 200px;
+  padding: 0;
+}
+
+.select-control {
+  margin-right: 70px;
+  width: 292px;
+}
+
+.button-view  {
+  width: 48px;
+  height: 48px;
+}
+
+
+/* КАРТОЧКИ ОТЕЛЕЙ */
+
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  /*justify-content: space-between;*/
+
+}
+
+.hotel-card {
+  padding: 20px;
+  margin: 0;
+  margin-right: 20px;
+  width: 340px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+
+}
 
 .hotel-card-title-link {
   font-weight: 700;
@@ -388,6 +471,22 @@ line-height: 23px;
 }
 
 /* Пагинация*/
+
+.pagination {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.pagination-item {
+  width: 60px;
+  height: 60px;
+  border-radius: 4px;
+  margin-right: 8px;
+  text-align: center;
+}
 
 .pagination-link {
   font-weight: 700;
