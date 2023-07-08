@@ -60,6 +60,7 @@ body {
 
 /* Кнопки*/
 .button {
+  display: inline-block;
   font-family: inherit;
   padding: 8px 20px;
   font-size: 16px;
@@ -73,8 +74,6 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
-
-
 
 /* Titles*/
 .title {
@@ -159,6 +158,8 @@ body {
   min-height: 19px;
   display: block;
   background-repeat: no-repeat;
+  background-position: center;
+  padding: 22px 12px;
 }
 
 .user-menu-search {
@@ -684,12 +685,19 @@ line-height: 23px;
 }
 
 .hotel-card-title-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+/* h3 */
+
+.hotel-card-title-link h3 {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  color: #000000;
-  text-decoration: none;
-
+  margin: 0;
+  font-family: PT Sans;
+  font-style: normal;
 }
 
 .hotel-card-price {
@@ -720,7 +728,7 @@ line-height: 23px;
   background-image: url(../images/star.svg);
   background-repeat: repeat-x;
   align-self: center;
-
+  margin: 0;
 }
 
 .rating-1 {
@@ -753,6 +761,7 @@ line-height: 23px;
   border-radius: 4px;
   background-color: #F2F2F2;
   text-transform: uppercase;
+  margin: 0;
 }
 
 
