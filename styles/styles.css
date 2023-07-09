@@ -678,6 +678,31 @@ align-items: center;
   display: flex;
 }
 
+.breadcrumbs-item {
+  display: flex;
+  align-items: center;
+  
+}
+
+.breadcrumbs-item .main-page-link::before {
+  display: block;
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-image: url(../images/breadcrumbs-home.svg);
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  display: block;
+  content: "";
+  width: 7px;
+  height: 10px;
+  margin: 0 10px;
+  background-image: url(../images/breadcrumbs-more.svg);
+  background-repeat: no-repeat;
+}
+
 .breadcrumbs-link {
   font-size: 16px;
   line-height: 21px;
