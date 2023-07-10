@@ -637,12 +637,12 @@ align-items: center;
   color: #756157;
 }
 
-.htmlacademy-link:active svg {
-  color: rgba(117, 97, 87, 0.3);
-}
-
 .htmlacademy-link:focus svg {
   color: #756157;
+}
+
+.htmlacademy-link:active svg {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 
@@ -681,7 +681,7 @@ align-items: center;
 .breadcrumbs-item {
   display: flex;
   align-items: center;
-  
+
 }
 
 .breadcrumbs-item .main-page-link::before {
@@ -707,6 +707,19 @@ align-items: center;
   font-size: 16px;
   line-height: 21px;
   color: #FFFFFF;
+}
+
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus {
+  color: #FFFFFF;
+  outline: none;
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 /* ФИЛЬТРЫ*/
