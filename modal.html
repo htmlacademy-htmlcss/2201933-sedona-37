@@ -217,16 +217,16 @@
 
               <div class="search-wrapper">
                 <label class="search-form-label">
-                  Дата Заезда:
-                  <input class="search-input date-input" type="text" name="arrival-date" value="27 апреля 2020" placeholder="Здесь выберете дату Вашего заезда">
+                  <span class="label-text">Дата заезда:</span>
+                  <input class="search-input date-input" type="text" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату">
                   <img class="date-image" src="images/date.svg" width="20" height="20" alt="Кaлендарь">
                 </label>
                 <span class="message-text error-message">Мы не можем отправить вас в прошлое.</span>
               </div>
               <div class="search-wrapper">
                 <label class="search-form-label">
-                  Дата Выезда:
-                  <input class="search-input date-input" type="text" name="departure-date" value="1 сентября 2023" placeholder="Здесь выберете дату Вашего выезда">
+                  <span class="label-text">Дата выезда:</span>
+                  <input class="search-input date-input" type="text" name="departure-date" value="1 сентября 2023" placeholder="Укажите дату">
                   <img class="date-image" src="images/date.svg" width="20" height="20" alt="Кaлендарь">
                 </label>
                 <span class="message-text info-message">На эти даты есть свободные номера. Пока есть.</span>
@@ -234,21 +234,25 @@
 
               <div class="search-wrapper modal-guests">
                 <div class="guests-wrapper">
-                  <label class="guests-label" for="adults">Взрослые:</label>
+                  <label class="guests-label" for="adults">
+                    <span class="label-text">Взрослые:</span>
+                  </label>
                   <div class="guests-input-wrapper">
                     <button class="guest-button less-button" type="button">
                       <span class="visually-hidden">Уменьшить</span>
                     </button>
-                    <input class="search-input guests-input" type="number" id="adults" name="adults" value="2" min="1" max="99">
+                    <input class="search-input guests-input" type="number" id="adults" name="adults" value="2" min="1" max="10">
                     <button class="guest-button more-button" type="button">
                       <span class="visually-hidden">Увеличить</span>
                     </button>
                   </div>
                 </div>
-                
+
                 <div class="guests-wrapper">
                   <span class="form-label">
-                    <label class="guests-label" for="child">Дети</label>
+                    <label class="guests-label" for="child">
+                      <span class="label-text">Дети:</span>
+                    </label>
                     <span class="tooltip">
                       <button class="tooltip-toggle" type="button">
                         <svg xmlns="http://www.w3.org/2000/svg" width="2" height="12" fill="none"><path fill="#fff" fill-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" clip-rule="evenodd"/></svg>
@@ -261,7 +265,7 @@
                     <button class="guest-button less-button" type="button">
                       <span class="visually-hidden">Уменьшить</span>
                     </button>
-                    <input class="search-input guests-input" type="number" id="child" name="child" value="2" min="1" max="99">
+                    <input class="search-input guests-input" type="number" id="child" name="child" value="2" min="0" max="10">
                     <button class="guest-button more-button" type="button">
                       <span class="visually-hidden">Увеличить</span>
                     </button>
@@ -269,6 +273,8 @@
                 </div>
 
               </div>
+              <button class="search-modal-button button" type="submit">Найти
+              </button>
             </form>
           </section>
 

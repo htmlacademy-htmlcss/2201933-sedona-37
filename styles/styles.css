@@ -865,14 +865,16 @@ align-items: center;
 
 .range-label {
   position: relative;
-  color: rgba(0, 0, 0, 0.3);
 }
 
 .price-text {
   position: absolute;
-  top: 12px;
+  color: rgba(0, 0, 0, 0.3);
   right: 20px;
-  line-height: 24px;
+  /*top: 12px;*/
+  top: 50%;
+  transform: translate(-50%);
+
 }
 
 .range-input {
@@ -1338,6 +1340,7 @@ align-items: center;
   background-color: #ffffff;
   border-radius: 30px;
   box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
+  z-index: 20;
 }
 
 
@@ -1348,16 +1351,31 @@ align-items: center;
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 0;
-  right: 0;
-  width: 56px;
-  height: 44px;
-  background-color: #ffffff;
+  top: 64px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  background-color: #F2F2F2;
   border: none;
+  border-radius: 50%;
   background-image: url("../images/close.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  background-color: #E6E6E6;
+  outline-color: #83B3D3;
+}
+
+.modal-close-button:active {
+  background-color: #E6E6E6;
+  opacity: 0.3;
 }
 
 .modal-title {
@@ -1369,6 +1387,8 @@ align-items: center;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+  text-align: left;
+
 }
 
 .search-wrapper{
@@ -1380,15 +1400,33 @@ align-items: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 4px;
+}
+
+.label-text {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  margin-right: 24px;
+  padding: 12px 0;
+  text-transform: capitalize;
+  vertical-align: middle;
+  max-width: 119px;
 }
 
 .search-input {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+}
+
+.search-input:hover {
+  background-color: #E6E6E6;
+}
+
+.search-input:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #83B3D3;;
 }
 
 .date-input {
@@ -1409,9 +1447,11 @@ align-items: center;
 
 .message-text {
   display: block;
-  margin-left: 157px;
-  margin-top: 4px;
   font-size: 16px;
+  max-width: 440px;
+  text-align: left;
+  padding: 0 20px;
+  margin-left: 137px;
 }
 
 .error-message {
@@ -1509,18 +1549,20 @@ align-items: center;
 
 .tooltip {
   position: absolute;
-  margin-top: 4px;/* надо доделать параметры координат и шир высот*/
-  margin-left: 2px;
-  width: 16px;
-  height: 16px;
+  margin-top: 164px;
+  margin-left: -110px;
+
 }
 
 .tooltip-toggle {
   border: none;
-  background-color: transparent;
+  display: block;
+  background-color: #83B3D3;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
   padding: 0;
   margin: 0;
-  display: block;
 }
 
 .tooltip-icon {
@@ -1548,4 +1590,28 @@ align-items: center;
   position: absolute;
   bottom: 100%;
   margin-bottom: 6px;/*доделать*/
+}
+
+.search-modal-button {
+  display: block;
+  width: 100%;
+  min-height: 60px;
+  border-radius: 10px;
+  background-color: #83B3D3;
+  font-size: 20px;
+  line-height: 24px;
+  border: none;
+}
+
+.search-modal-button:hover {
+  background-color: #68A2CA;
+}
+
+.search-modal-button:focus {
+  background-color: #68A2CA;
+}
+
+.search-modal-button:active {
+  background-color: #68A2CA;
+  opacity: 0.3;
 }
