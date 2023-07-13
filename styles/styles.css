@@ -466,14 +466,19 @@ align-items: center;
   background-color: #615048;
 }
 
+.search-link-button:focus {
+  background-color: #615048;
+  outline: none;
+}
+
 .search-link-button:active {
   color: rgba(255, 255, 255, 0.30);
   background-color: #756157;
 }
 
-.search-link-button:focus {
-  background-color: #615048;
-  outline: none;
+.search-link-button:disabled {
+  color: #E5E5E5;
+  background-color: #FFFFFF;
 }
 
 
@@ -989,6 +994,11 @@ align-items: center;
   outline: none;
 }
 
+.button-submit:disabled {
+  background-color: #E5E5E5;
+  color: #FFFFFF;
+}
+
 .button-reset {
   background-color: rgba(0, 0, 0, 0);
   min-width: 191px;
@@ -1008,6 +1018,11 @@ align-items: center;
   outline: 3px solid #83B3D3;
 }
 
+.button-reset:disabled {
+  background-color: rgba(0, 0, 0, 0);
+  color: #FFFFFF;
+  opacity: 0.1;
+}
 
 /* БЛОК СОРТИРОВКИ & КАРТОЧКИ ОТЕЛЕЙ*/
 
@@ -1200,6 +1215,11 @@ align-items: center;
   outline: none;
 }
 
+
+.add-favorites-button:disabled {
+  background-color: #E5E5E5;
+}
+
 .in-favorites-button {
   min-width: 140px;
   border: none;
@@ -1219,6 +1239,10 @@ align-items: center;
 .in-favorites-button:focus {
   background-color: #6C9E42;
   outline: none;
+}
+
+.in-favorites-button:disabled {
+  background-color: #E5E5E5;
 }
 
 .raiting-stars {
@@ -1507,6 +1531,7 @@ align-items: center;
 
 .guest-button {
   position: relative;
+  display: block;
   width: 20px;
   height: 20px;
   padding: 0;
@@ -1518,8 +1543,20 @@ align-items: center;
   cursor: pointer;
 }
 
+.guest-button:hover {
+  opacity: 1;
+}
+
+.guest-button:focus {
+  outline: 3px solid #82B3D3;
+  opacity: 1;
+}
+
+.guest-button:active {
+  opacity: 0.2;
+}
+
 .less-button {
-  display: block;
   width: 20px;
   height: 20px;
   background-image: url(../images/less.svg);
@@ -1540,7 +1577,6 @@ align-items: center;
 }
 
 .more-button {
-  display: block;
   width: 20px;
   height: 20px;
   background-image: url(../images/more.svg);
@@ -1579,6 +1615,15 @@ align-items: center;
   margin: 0;
 }
 
+.tooltip-toggle:hover {
+  background-color: #68A2CA;
+}
+
+.tooltip-toggle:focus {
+  outline: none;
+  background-color: #68A2CA;
+}
+
 .tooltip-toggle:hover + .tooltip-text {
   display: block;
 }
@@ -1588,10 +1633,6 @@ align-items: center;
   height: 100%;
   color: #242424;/*поменять  цыет здесь и ниже*/
   display: block;
-}
-
-.tooltip-toggle:hover svg {
-  color: #83B3D3;
 }
 
 .tooltip-text {
@@ -1643,6 +1684,7 @@ align-items: center;
 
 .search-modal-button:focus {
   background-color: #68A2CA;
+  outline: none;
 }
 
 .search-modal-button:active {
