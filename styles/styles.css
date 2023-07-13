@@ -150,7 +150,7 @@ body {
 .navigation-link-current {
   /*border-bottom: 2px solid #756257; линия получается длинее*/
   text-decoration: underline;
-  text-underline-offset: 20px;
+  text-underline-offset: 19px;
   text-decoration-color: #756257;
   text-decoration-thickness: 2px;
   text-underline-position: under;
