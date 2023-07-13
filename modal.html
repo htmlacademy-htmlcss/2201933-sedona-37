@@ -206,6 +206,112 @@
 
       </footer>
 
+      <div class="modal-container">
+        <div class="modal modal-search">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            <form class="search-form" action="https://echo.htmlacademy.ru/"  method="get">
+
+              <div class="search-wrapper">
+                <label class="search-form-label">
+                  <span class="label-text">Дата заезда:</span>
+                  <input class="search-input date-input" type="text" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату">
+                  <img class="date-image" src="images/date.svg" width="20" height="20" alt="Кaлендарь">
+                </label>
+                <span class="message-text error-message">Мы не можем отправить вас в прошлое.</span>
+              </div>
+              <div class="search-wrapper">
+                <label class="search-form-label">
+                  <span class="label-text">Дата выезда:</span>
+                  <input class="search-input date-input" type="text" name="departure-date" value="1 сентября 2023" placeholder="Укажите дату">
+                  <img class="date-image" src="images/date.svg" width="20" height="20" alt="Кaлендарь">
+                </label>
+                <span class="message-text info-message">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
+
+              <div class="search-wrapper modal-guests">
+                <div class="guests-wrapper">
+                  <label class="guests-label" for="adults">
+                    <span class="label-text label-text-guests">Взрослые:</span>
+                  </label>
+                  <div class="guests-input-wrapper">
+                    <button class="guest-button less-button" type="button">
+                      <span class="visually-hidden">Уменьшить</span>
+                    </button>
+                    <input class="search-input guests-input" type="number" id="adults" name="adults" value="2" min="1" max="10">
+                    <button class="guest-button more-button" type="button">
+                      <span class="visually-hidden">Увеличить</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="guests-wrapper">
+                  <span class="form-label">
+                    <label class="guests-label" for="child">
+                      <span class="label-text label-text-child">Дети:</span>
+                      <button class="tooltip-toggle" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="12" fill="none"><path fill="#fff" fill-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" clip-rule="evenodd"/></svg>
+                      </button>
+                      <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                      </span>
+                    </label>
+                  </span>
+                  
+                  <div class="guests-input-wrapper">
+                    <button class="guest-button less-button" type="button">
+                      <span class="visually-hidden">Уменьшить</span>
+                    </button>
+                    <input class="search-input guests-input" type="number" id="child" name="child" value="2" min="0" max="10">
+                    <button class="guest-button more-button" type="button">
+                      <span class="visually-hidden">Увеличить</span>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+              <button class="search-modal-button button" type="submit">Найти
+              </button>
+            </form>
+          </section>
+
+        </div>
+      </div>
+
     </div>
   </body>
 </html>
+
+
+
+
+
+
+<!--
+  <div class="guests-wrapper">
+                  <span class="form-label">
+                    <label class="guests-label" for="child">
+                      <span class="label-text label-text-child">Дети:</span>
+                      <button class="tooltip-toggle" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="2" height="12" fill="none"><path fill="#fff" fill-rule="evenodd" d="M0 0h2v2H0V0Zm2 12H0V3h2v9Z" clip-rule="evenodd"/></svg>
+                      </button>
+                      <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                      </span>
+                    </label>
+                    <span class="tooltip">
+
+                    </span>
+
+                </span>
+                <div class="guests-input-wrapper">
+                  <button class="guest-button less-button" type="button">
+                    <span class="visually-hidden">Уменьшить</span>
+                  </button>
+                  <input class="search-input guests-input" type="number" id="child" name="child" value="2" min="0" max="10">
+                  <button class="guest-button more-button" type="button">
+                    <span class="visually-hidden">Увеличить</span>
+                  </button>
+                </div>
+              </div>-->
