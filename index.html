@@ -9,7 +9,7 @@
   <body>
 
     <div class="page-container">
-      <header class="main-header">
+      <header class="main-header" data-test="header">
         <!-- ЛОГОТИП-->
         <a class="logo" href="index.html" aria-current="page">
           <!--aria-current="page" -показывает,что мы находимся на текущ странице-->
@@ -64,16 +64,16 @@
       </header>
 
       <!-- ОСНОВНОЕ СОДЕРЖИМОЕ-->
-      <main class="main-index main-container">
+      <main class="main-index main-container" data-test="main">
         <!-- БЛОК hero-->
-        <section class="hero">
+        <section class="hero" data-test="hero">
           <h1 class="visually-hidden">
             Добро пожаловать в великолепную Седону
           </h1>
           <img class="hero-image-title" src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в безумно красивую Седону.">
         </section>
         <!--  ПРЕИМУЩЕСТВА-->
-        <section class="advantages">
+        <section class="advantages" data-test="advantages">
           <div class="advantages-container">
             <h2 class="advantages-title title">
               Седона — небольшой городок в Аризоне,
@@ -138,7 +138,7 @@
         </section>
 
         <!-- СЕРВИС-->
-        <section class="services">
+        <section class="services" data-test="service">
           <div class="services-conteiner">
             <h2 class="services-title title">
               Приезжайте в Седону отдохнуть в комфорте и уюте!
@@ -179,7 +179,7 @@
         </section>
 
         <!-- ПОИСК-->
-        <section class="search">
+        <section class="search" data-test="search">
           <h2 class="search-title title">
             Заинтересовались?
           </h2>
@@ -190,7 +190,7 @@
         </section>
 
         <!-- ПОДПИСКА-->
-        <section class="subscribe">
+        <section class="subscribe" data-test="subscribe">
           <h2 class="subscribe-title title">
             Подпишитесь на рассылку
           </h2>
@@ -210,7 +210,7 @@
       </main>
 
       <!-- ПОДВАЛ-->
-      <footer class="main-footer">
+      <footer class="main-footer" data-test="footer">
         <section  class="contacts-footer">
           <h2 class="visually-hidden">
             Контакты
