@@ -27,7 +27,7 @@ html {
 
 body {
   height: 100%;
-
+  min-width: 1280px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -150,7 +150,7 @@ body {
 .navigation-link-current {
   /*border-bottom: 2px solid #756257; линия получается длинее*/
   text-decoration: underline;
-  text-underline-offset: 19px;
+  text-underline-offset: 18px;
   text-decoration-color: #756257;
   text-decoration-thickness: 2px;
   text-underline-position: under;
@@ -169,7 +169,9 @@ body {
 
 .user-menu-item {
   min-width: 44px;
-
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .user-menu-search, .user-menu-favorites {
@@ -180,7 +182,8 @@ body {
   display: block;
   background-repeat: no-repeat;
   background-position: center;
-  padding: 22px 12px;
+  padding: 0 22px;
+  height: 100%;
 }
 
 .user-menu-search {
@@ -209,11 +212,10 @@ body {
   line-height: 10px;
   padding: 5px;
   position: absolute;
-
   min-width: 20px;
   height: 20px;
-  top: 2px;
-  right: 3px;
+  top: 11px;
+  right: 4px;
 }
 
 .user-item {
@@ -255,7 +257,7 @@ body {
   background-image: url("../images/hero-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 485px;
+  max-height: 485px;
 }
 
 .hero-image-title {
@@ -290,10 +292,19 @@ body {
 
 }
 
+.advantages-description-item {
+  margin: 0;
+}
+
 .advantages-wrapper {
   width: 400px;
-  padding: 103px 85px;
+  padding: 102px 85px;
   color: #FFFFFF;
+}
+
+.advantages-item {
+  background-color: #82B3D3;
+  min-height: 385px;
 }
 
 .advantages-item:first-child {
@@ -309,12 +320,7 @@ align-items: center;
 
 .advantages-item:not(:first-child, :last-child) {
   width: 400px;
-  padding: 103px 85px;
-}
-
-.advantages-item {
-  background-color: #82B3D3;
-
+  padding: 113px 85px;
 }
 
 .advantages-item:nth-child(2n) {
@@ -377,6 +383,7 @@ align-items: center;
 
 .services-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -521,7 +528,7 @@ align-items: center;
   border: none;
   color: #000000;
   font-size: 18px;
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   line-height: 24px;
 }
 
@@ -569,7 +576,6 @@ align-items: center;
 .contacts-footer {
   display: flex;
   justify-content: space-between;
-
   padding: 40px 70px 30px 70px;
 }
 
@@ -587,7 +593,7 @@ align-items: center;
   padding: 0 10px;
   width: 47px;
   height: 40px;
-
+  display: flex;
 }
 
 .social-link {
@@ -619,6 +625,7 @@ align-items: center;
 }
 
 .phone-footer {
+  max-width: 350px;
   font-style: normal;
   display: flex;
   align-items: center;
@@ -648,7 +655,7 @@ align-items: center;
 
 .htmlacademy-link {
   display: block;
-  margin: 8.5px 0 8.6px 0;
+  margin: 8.5px 0 8.6px 44px;
   width: 115px;
   height: 33px;
 }
@@ -679,7 +686,7 @@ align-items: center;
 .top-conteiner {
 
   color: #FFFFFF;
-  padding: 35px 70px 70px 70px;
+  padding: 35px 70px 70px 69px;
   background-color: #82B3D3;
   background-image: url("../images/filtr.jpg");
   background-size: cover;
@@ -695,15 +702,16 @@ align-items: center;
   font-size: 60px;
   line-height: 78px;
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
 }
 
 .breadcrumbs-list {
-  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
-  display: flex;
+  list-style: none;
 }
 
 .breadcrumbs-item {
@@ -770,6 +778,7 @@ align-items: center;
   font-size: 20px;
   line-height: 24px;
   margin-bottom: 32px;
+  padding: 0;
   text-transform: capitalize;
 }
 
@@ -862,10 +871,15 @@ align-items: center;
   margin-bottom: 32px;
 }
 
+.range {
+  max-width: 315px;
+  overflow: auto;
+}
+
 .range-wrapper-inputs {
   display: flex;
   gap: 2px;
-  margin-bottom: 46px;
+  margin-bottom: 44px;
 }
 
 .range-label {
@@ -876,10 +890,7 @@ align-items: center;
   position: absolute;
   color: rgba(0, 0, 0, 0.3);
   right: 20px;
-  /*top: 12px;*/
-  top: 50%;
-  transform: translate(-50%);
-
+  top: 12px;
 }
 
 .range-input {
@@ -888,7 +899,7 @@ align-items: center;
   height: 48px;
   box-sizing: border-box;
   border: none;
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -924,6 +935,7 @@ align-items: center;
   width: 287px;
   height: 4px;
   margin-top: 44px;
+  margin-bottom: 8px;
   background-color: rgba(255, 255, 255, 0.4);
 }
 
@@ -1035,7 +1047,7 @@ align-items: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .hotel-catalog-title {
@@ -1046,16 +1058,48 @@ align-items: center;
 }
 
 /* СОРТИРОВКA*/
+
+.sorting-container {
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  justify-content: space-between;
+  gap: 8px;
+  /*margin-bottom: 16px;
+  padding: 16px;*/
+}
+
 .select-control {
   margin-right: 70px;
-  padding: 14px 20px;
+  padding: 14px 20px 14px 15px;
   width: 292px;
   font-size: 18px;
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   line-height: 21px;
   color: #333333;
   border-radius: 4px;
   border: 2px solid #E5E5E5;
+}
+
+.select-control {
+  width: 292px;
+  height: 49px;
+  padding: 10px 20px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: 70px;
+  position: relative;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #ffffff;
+  background-image: url(../images/select.svg);
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .select-control:hover {
@@ -1105,20 +1149,19 @@ align-items: center;
   background-image: url(../images/list.svg);
 }
 
-
-
 /* КАРТОЧКИ ОТЕЛЕЙ */
 
 .hotel-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);
   gap: 20px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 80px;
   text-align: left;
-
+  padding: 0;
+  padding-bottom: 37px;
+  margin: 0;
+  margin-bottom: 41px;
+  list-style: none;
+  border-bottom: 1px solid #E6E6E6;
 }
 
 .hotel-card {
@@ -1167,7 +1210,7 @@ align-items: center;
   font-size: 24px;
   line-height: 28px;
   margin: 0;
-  font-family: PT Sans;
+  font-family: "PT Sans", Arial, sans-serif;
   font-style: normal;
 }
 
@@ -1253,27 +1296,27 @@ align-items: center;
   margin: 0;
 }
 
-.rating-1 {
+.raiting-1 {
   width: 22px;
 }
 
-.rating-2 {
+.raiting-2 {
   width: 44px;
 }
 
-.rating-3 {
+.raiting-3 {
   width: 66px;
 }
 
-.rating-4 {
+.raiting-4 {
   width: 88px;
 }
 
-.rating-5 {
+.raiting-5 {
   width: 110px;
 }
 
-.rating-hotel {
+.raiting-hotel {
   font-size: 16px;
   line-height: 20px;
   width: 140px;
@@ -1282,6 +1325,7 @@ align-items: center;
   border-radius: 4px;
   background-color: #F2F2F2;
   text-transform: uppercase;
+  text-align: center;
   margin: 0;
 }
 
@@ -1290,28 +1334,31 @@ align-items: center;
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 1060px;
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 60px;
   gap: 8px ;
   text-align: left;
 }
 
 .pagination-item {
-  width: 60px;
-  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+  min-height: 60px;
   border-radius: 4px;
-
   text-align: center;
 }
 
 .pagination-link {
   display: block;
   box-sizing: border-box;
-  width: 60px;
-  height: 60px;
-  padding: 11.4px 0px 12.6px 0px;
+  min-width: 60px;
+  min-height: 60px;
+  padding: 11px 0px 12px 0px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -1406,7 +1453,7 @@ align-items: center;
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -1462,7 +1509,7 @@ align-items: center;
 .date-input {
   width: 440px;
   padding: 12px 40px 12px 20px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   background-color: #F2F2F2;
   border-radius: 4px;
   border: none;
@@ -1514,7 +1561,7 @@ align-items: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", Arial, sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -1570,7 +1617,7 @@ align-items: center;
   width: 31px;
   padding: 14px 5px;
   box-sizing: border-box;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   text-align: center;
   background-color: #F2F2F2;
   border: none;
